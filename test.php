@@ -1,3 +1,4 @@
 <?php
-phpinfo();
+$l = "1";
+echo $1;
 ?>
