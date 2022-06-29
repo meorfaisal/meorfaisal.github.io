@@ -1,4 +1,4 @@
-var dir = "https://meorfaisal.com/page/";
+var dir = "https://github.com/meorfaisal/meorfaisal.github.io/tree/main/page";
 var fileextension = ".html";
 $.ajax({
     url: dir,
