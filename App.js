@@ -1,18 +1,15 @@
-var dir = "/page";
+var dir = "page";
 var fileextension = ".html";
 $.ajax({
-    //This will retrieve the contents of the folder if the folder is configured as 'browsable'
     url: dir,
     success: function(data) {
-        // List all mp4 file names in the page
         $(data).find("a:contains(" + fileextension + ")").each(function() {
-            var filename = this.href.replace(window.location.host, "").replace("https://", "");
-		console.log(filename)
+            var filename = this.href.replace(window.location.host, "").replace("http://", "");
             file = filename
             $.get(file, function(data) {
-                var txt = new Array(data);
+                var html = new Array(data);
                 var destination = document.getElementById("App")
-                destination.innerHTML += txt + '<br>';
+                destination.innerHTML += html + '<br>';
 
             });
         });
@@ -69,4 +66,4 @@ let konten = `
 
 $(document).ready(function() {
     $('#content').append(konten);
-  })
+})
