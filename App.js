@@ -6,7 +6,7 @@ $.ajax({
     success: function (data) {
         // List all mp4 file names in the page
         $(data).find("a:contains(" + fileextension + ")").each(function () {
-            var filename = this.href.replace(window.location.host, "").replace("http://", "");
+            var filename = this.href.replace(window.location.host, "").replace("https://", "");
 file = filename
 $.get(file, function(data) {
 	var txt = new Array(data);
