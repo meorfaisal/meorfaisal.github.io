@@ -3,17 +3,18 @@ var fileextension = ".html";
 $.ajax({
     //This will retrieve the contents of the folder if the folder is configured as 'browsable'
     url: dir,
-    success: function (data) {
+    success: function(data) {
         // List all mp4 file names in the page
-        $(data).find("a:contains(" + fileextension + ")").each(function () {
+        $(data).find("a:contains(" + fileextension + ")").each(function() {
             var filename = this.href.replace(window.location.host, "").replace("https://", "");
-file = filename
-$.get(file, function(data) {
-	var txt = new Array(data);
-		var destination = document.getElementById("App")
-			destination.innerHTML += txt + '<br>';
+		console.log(filename)
+            file = filename
+            $.get(file, function(data) {
+                var txt = new Array(data);
+                var destination = document.getElementById("App")
+                destination.innerHTML += txt + '<br>';
 
-});          
+            });
         });
 
     }
