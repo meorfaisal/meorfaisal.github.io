@@ -5,7 +5,6 @@ $.ajax({
     success: function(data) {
         $(data).find("a:contains(" + fileextension + ")").each(function(pages) {
             var filename = this.href.replace(window.location.host, "").replace("https://", "");
-            console.log(filename)
             file = filename
             $.get(file, function(data) {
                 var html = new Array(data);
