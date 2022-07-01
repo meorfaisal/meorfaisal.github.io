@@ -55,7 +55,7 @@ let konten = `
 
       <p>Saya terbuka pada jawatan Web Developer.</p>
       <p>
-        <a class="btn btn-primary" href="/docs/4.3/components/navbar/" role="button">Resume Rasa »</a>
+        <a class="btn btn-primary" href="https://meorfaisal.com/RESUME_MEOR_FAISAL_BIN_MEOR_JALALUDDIN.pdf" role="button">Resume Rasa »</a>
       </p>
     </div>
   </div>
