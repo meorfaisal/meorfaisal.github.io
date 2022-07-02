@@ -107,7 +107,7 @@ let konten = `
     <div class="row">
       <div class="col-lg-4" data-aos="fade-right">
       <img class="d-block mx-auto mb-4" src="/src/ico.png" >
-      <center><a class="btn btn-primary" href="https://meorfaisal.com/RESUME_MEOR_FAISAL_BIN_MEOR_JALALUDDIN.pdf" role="button">Resume Rasa »</a></center>
+      <center><a class="btn btn-primary" href="https://meorfaisal.com/RESUME_MEOR_FAISAL_BIN_MEOR_JALALUDDIN.pdf" role="button">Resume Saya »</a></center>
       </div>
       <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
         <h3>MEOR FAISAL</h3>
